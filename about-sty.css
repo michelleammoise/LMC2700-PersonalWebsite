@@ -25,6 +25,7 @@ body {
     font-family: "Funkhouse";
     color: white;
     background-color: rgb(88, 164, 245);
+    text-align: center;
 }
 
 .banner {
@@ -48,13 +49,41 @@ h2 {
     border-radius: 5px;
 }
 
-/* #image img {
+#me img {
     margin-left: center;
     margin-right: center;
     display: block;
-    border: royalblue dashed 20px;
-} */
+}
 
-.info {
-    text-align: left;
+
+p {
+    text-align: justify;
+    animation-duration: 3s;
+    animation-name: slidein;
+    text-shadow: rgb(88, 164, 245);;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: grey inset 5px;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.shimmer {
+    background: #94c0eb;
+    background-image: linear-gradient(to right, #94c0eb 0%, #a8d4ff 20%, #94c0eb 40%, #94c0eb 100%);
+    background-repeat: no-repeat
 }
