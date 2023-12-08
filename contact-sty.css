@@ -21,11 +21,18 @@
     color: rgb(88, 164, 245);
 }
 
+p {
+    font-family: "Funkhouse";
+    color: white;
+    background-color: rgb(88, 164, 245);
+    size: 24px;
+    animation: slidein 5s;
+    text-align: center;
+}
 body {
     font-family: "Funkhouse";
     color: white;
     background-color: rgb(88, 164, 245);
-    size: 16px;
 }
 
 .banner {
@@ -48,4 +55,32 @@ a {
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 200%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
+}
+
+h1, h2, h3 {
+    animation: zoomIn 5s;
+    text-align: center;
 }

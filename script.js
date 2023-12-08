@@ -14,6 +14,8 @@ banner.addEventListener('click', () => {
 })
 
 
-/* create a simple page animation that fade transitions to next page when click */
-// Path: script.js
-
+// function scrollleft() {
+//   document.getElementById("scrolling-text").style.left = '100%';
+//   setTimeout(scrollleft, 25);
+// }
+//  scrollleft();

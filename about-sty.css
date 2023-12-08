@@ -35,10 +35,12 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: "Funkhouse";
     color: rgb(255, 255, 255);
     margin-top: 0;
+    animation: zoomIn 5s;
 }
 
 .subpage-link {
@@ -58,9 +60,7 @@ h2 {
 
 p {
     text-align: justify;
-    animation-duration: 3s;
-    animation-name: slidein;
-    text-shadow: rgb(88, 164, 245);;
+    text-shadow: rgb(88, 164, 245);
 }
 
 img {
@@ -70,17 +70,28 @@ img {
     border: grey inset 5px;
 }
 
-@keyframes slidein {
+@keyframes zoomIn {
     from {
-        margin-left: 100%;
-        width: 300%;
+        transform: scale(0);
     }
 
     to {
-        margin-left: 0%;
-        width: 100%;
+        transform: scale(1);
     }
+
 }
+
+
+/* @keyframes zoomIn {
+    from {
+        motion-rotation: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
+} */
 
 .shimmer {
     background: #94c0eb;
